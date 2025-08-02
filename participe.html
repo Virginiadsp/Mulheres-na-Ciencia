@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participe</title>
+
+     <link rel="stylesheet" href="CSS/style.css">
+
+     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <img id="banner" src="img/logo.jpg" 
+        alt="Banner">
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="biografias.html">Biografias</a>
+            <a href="areas-da-ciencia.html">Áreas da Ciência</a>
+            <a href="cultura-pop.html">Cultura Pop</a>
+            <a href="testes.html">Testes</a>
+            <a href="participe.html">Participe</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Participe</h1>
+        <p id="destaque">Sua voz importa.<br> Participe compartilhando ideias e experiências.</p>
+
+        <form id="form-pesquisa" action="https://formsubmit.co/virginiapereira2812@gmail.com" method="POST">
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+
+            <label for="nome" id="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+
+            <label for="email" id="nome">E-mail:</label>
+            <input type="text" name="email" id="email">
+
+            Gênero:
+            <select name="genero">
+                <option value="" selected>Selecione</option>
+                <option value="mulher cis">Mulher cis</option>
+                <option value="mulher trans">Mulher trans</option>
+                <option value="homem cis">Homem cis</option>
+                <option value="homem tras">Homem trans</option>
+                <option value="não binare">Não-bináne</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="dataNascimento">Data de nascimento:</label>
+            <input type="date" name="dataNascimento" id="dataNascimento">
+
+
+            <label for="comentario">Comentário:</label>
+            <textarea id="comentario" name="comentario" placeholder="Digite seu comentário" rows="5" cols="40"></textarea>
+
+            <input type="submit" value="Enviar">
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Mulheres na Ciência. Todos os direitos reservados.</p>
+    </footer>
+    
+</body>
+</html>

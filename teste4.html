@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Teste: Qual mito da verdade científica você acredita?</title>
+
+     <link rel="stylesheet" href="CSS/style.css">
+
+     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Quicksand', sans-serif; }
+    .pergunta { margin-bottom: 20px; }
+    #resultado { font-weight: bold; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+    <header>
+        <img id="banner" src="img/logo.jpg" 
+        alt="Banner">
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="biografias.html">Biografias</a>
+            <a href="areas-da-ciencia.html">Áreas da Ciência</a>
+            <a href="cultura-pop.html">Cultura Pop</a>
+            <a href="testes.html">Testes</a>
+            <a href="participe.html">Participe</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="teste">
+
+
+            <h2>Você consegue identificar o mito da verdade científica que mais acredita?</h2>
+            <p>Teste seus conhecimentos e descubra quais mitos científicos ainda te enganam!</p>
+
+            <form id="quizForm">
+
+
+                <div class="pergunta">
+                    <p>1. O que você acha sobre o processo científico?</p>
+                        <label><input type="radio" name="q1" value="m1"> Ciência é uma sequência linear e infalível de descobertas.</label><br/>
+                        <label><input type="radio" name="q1" value="m2"> A ciência é apenas um conjunto de fatos já comprovados.</label><br/>
+                        <label><input type="radio" name="q1" value="m3"> Cientistas trabalham isoladamente e sem influência externa.</label><br/>
+                        <label><input type="radio" name="q1" value="m4"> Toda teoria científica é absoluta e nunca muda.</label><br/>
+                        <label><input type="radio" name="q1" value="m5"> Ciência e tecnologia sempre levam a um progresso automático e positivo.</label><br/>
+                        <label><input type="radio" name="q1" value="m6"> A ciência é separada da sociedade e da cultura.</label>
+                </div>
+
+                <div class="pergunta">
+                    <p>2. Como você vê as controvérsias científicas?</p>
+                        <label><input type="radio" name="q2" value="m1"> Elas indicam que a ciência está errada.</label><br/>
+                        <label><input type="radio" name="q2" value="m2"> Controvérsias não existem na ciência real.</label><br/>
+                        <label><input type="radio" name="q2" value="m3"> São resultado de opiniões pessoais dos cientistas.</label><br/>
+                        <label><input type="radio" name="q2" value="m4"> Uma vez estabelecida, uma teoria não pode ser contestada.</label><br/>
+                        <label><input type="radio" name="q2" value="m5"> Controvérsias são sinais de progresso e debate saudável.</label><br/>
+                        <label><input type="radio" name="q2" value="m6"> Ciência e sociedade não influenciam uma à outra.</label>
+                </div>
+
+                <div class="pergunta">
+                    <p>3. Qual a sua opinião sobre as teorias científicas?</p>
+                        <label><input type="radio" name="q3" value="m1"> Teorias científicas são verdades absolutas.</label><br/>
+                        <label><input type="radio" name="q3" value="m2"> Teorias são suposições sem valor até serem provadas.</label><br/>
+                        <label><input type="radio" name="q3" value="m3"> As teorias são criadas só por cientistas isolados.</label><br/>
+                        <label><input type="radio" name="q3" value="m4"> Teorias nunca mudam uma vez formuladas.</label><br/>
+                        <label><input type="radio" name="q3" value="m5"> Teorias são ferramentas que podem evoluir com novas evidências.</label><br/>
+                        <label><input type="radio" name="q3" value="m6"> Ciência é neutra, sem relação com cultura ou política.</label>
+                </div>
+
+                <div class="pergunta">
+                    <p>4. Como você acredita que a ciência impacta a sociedade?</p>
+                        <label><input type="radio" name="q4" value="m1"> Ciência automaticamente traz progresso moral e social.</label><br/>
+                        <label><input type="radio" name="q4" value="m2"> Ciência é apenas conhecimento, sem impacto social real.</label><br/>
+                        <label><input type="radio" name="q4" value="m3"> Cientistas não devem se preocupar com impactos sociais.</label><br/>
+                        <label><input type="radio" name="q4" value="m4"> Ciência é um conjunto fixo de verdades.</label><br/>
+                        <label><input type="radio" name="q4" value="m5"> A ciência pode causar avanços, mas depende de escolhas éticas.</label><br/>
+                        <label><input type="radio" name="q4" value="m6"> A ciência está fora dos problemas sociais e culturais.</label>
+                </div>
+
+                <div class="pergunta">
+                    <p>5. Como você acredita que as descobertas científicas são feitas?</p>
+                        <label><input type="radio" name="q5" value="m1"> Por descobertas repentinas e mágicas.</label><br/>
+                        <label><input type="radio" name="q5" value="m2"> Somente através de experimentos perfeitos e infalíveis.</label><br/>
+                        <label><input type="radio" name="q5" value="m3"> Cientistas trabalham sempre isolados.</label><br/>
+                        <label><input type="radio" name="q5" value="m4"> Teorias antigas nunca são revisadas.</label><br/>
+                        <label><input type="radio" name="q5" value="m5"> Descobertas são resultado de esforço colaborativo e revisão constante.</label><br/>
+                        <label><input type="radio" name="q5" value="m6"> Ciência não muda com o tempo.</label>
+                </div>
+
+                <div class="pergunta">
+                    <p>6. O que você acha do papel da ética na ciência?</p>
+                        <label><input type="radio" name="q6" value="m1"> Ciência é independente da ética.</label><br/>
+                        <label><input type="radio" name="q6" value="m2"> Ética limita a liberdade científica.</label><br/>
+                        <label><input type="radio" name="q6" value="m3"> Cientistas não precisam se preocupar com ética.</label><br/>
+                        <label><input type="radio" name="q6" value="m4"> Ciência é só sobre fatos, ética é outra coisa.</label><br/>
+                        <label><input type="radio" name="q6" value="m5"> Ética é fundamental para guiar a ciência para o bem.</label><br/>
+                        <label><input type="radio" name="q6" value="m6"> Ética e ciência são separadas e não influenciam uma à outra.</label>
+                </div>
+
+                <button type="button" onclick="calcularResultado()">Ver resultado</button>
+                
+            </form>
+
+            <div id="resultado"></div>
+
+            <script>
+                function calcularResultado() {
+                    const perguntas = ["q1","q2","q3","q4","q5","q6"];
+                    const contagem = {
+                    m1: 0, // mito da linearidade e infalibilidade
+                    m2: 0, // mito da ciência como fato fixo
+                    m3: 0, // mito do cientista isolado
+                    m4: 0, // mito da verdade absoluta
+                    m5: 0, // mito do progresso automático
+                    m6: 0  // mito da ciência separada da sociedade
+                    };
+
+                    for(let p of perguntas){
+                    const resposta = document.querySelector(`input[name="${p}"]:checked`);
+                    if(!resposta){
+                        alert("Por favor, responda todas as perguntas.");
+                        return;
+                    }
+                    contagem[resposta.value]++;
+                    }
+
+                    const maior = Object.entries(contagem).reduce((a,b) => a[1]>=b[1]? a : b)[0];
+
+                    const descricoes = {
+                    m1: "Você acredita no mito da ciência como processo linear e infalível. A ciência, na verdade, é um processo complexo, cheio de dúvidas e revisões constantes.",
+                    m2: "Você acredita que a ciência é um conjunto fixo de fatos imutáveis, mas a verdade é que ela evolui conforme novas evidências surgem.",
+                    m3: "Você acredita no mito do cientista isolado, quando na realidade a ciência é altamente colaborativa e social.",
+                    m4: "Você acredita que teorias científicas são verdades absolutas e imutáveis, mas elas são ferramentas em constante atualização.",
+                    m5: "Você acredita que o progresso científico é automático e sempre positivo, mas ele depende de escolhas éticas e sociais.",
+                    m6: "Você acredita que a ciência é separada da sociedade e cultura, mas ela está profundamente integrada e influenciada por elas."
+                    };
+
+                    document.getElementById("resultado").textContent = descricoes[maior];
+                }
+            </script>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Mulheres na Ciência. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

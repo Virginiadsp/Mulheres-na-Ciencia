@@ -1,0 +1,184 @@
+/*Geral*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: rgb(247, 236, 236);
+}
+
+main {
+  width: 920px;
+  margin: 0 auto;
+  padding: 15px;
+  overflow: hidden;
+  color: #444;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-right: 20%;
+}
+
+/*Header*/
+
+header {
+  color: white;
+  background-color: #5bbca9;
+  margin: 0;
+}
+
+#banner {
+  width: 100%;
+}
+
+nav {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin-top: 1px;
+}
+
+nav, a {
+  text-align: center;
+  background-color: #5bbca9;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 16px;
+  color: rgb(255, 255, 255); 
+  border-radius: 5px;;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+header a:link, header a:visited {
+  padding: 8px 12px;
+  background-color: rgb(0, 118, 192); 
+}
+
+header a:hover { 
+  color: aqua; 
+  background-color: rgb(175, 113, 233); 
+}
+
+img {
+  width: 700px;
+}
+
+/*Testes e formulários*/
+
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+figcaption {
+  color: rgb(129, 129, 129);
+  font-style: italic;
+  margin-left: 10px;
+}
+
+#form-pesquisa label,
+#form-pesquisa input,
+#form-pesquisa button {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.pergunta p {
+  font-weight: bold;
+  color:#090909 
+}
+
+#teste a {
+  display: block;
+  margin-bottom: 10px;
+  background-color: rgb(175, 113, 233);
+  padding: 5px;
+}
+
+#resultado {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/*Articles*/
+
+article {
+  border: 1px solid rgb(192, 192, 192);
+  background-color: #f9f9f9; 
+  padding: 15px 20px;
+  margin-bottom: 20px;   
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  max-width: 700px;  
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+/* Cabeçalhos dentro do artigo */
+article h2 {
+  margin-top: 0;
+  color: #090909;
+}
+
+/* Parágrafos com boa leitura */
+article p {
+  line-height: 1.5;
+  color: #444;
+  text-align: justify;
+}
+
+article figure img {
+  max-width: 100%; 
+  height: auto;       
+  display: block;     
+  border-radius: 6px; 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); 
+}
+
+#destaque {
+  line-height: 1.5;
+  color: rgb(75, 68, 68);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/*Index*/
+
+.container-sobre {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.sobre-projeto p {
+  margin-bottom: 1rem; 
+  color: rgb(75, 68, 68)
+}
+
+/*Footer*/
+
+footer {
+  text-align: center;
+  background-color: #5bbca9;
+  color: white;
+  padding-top: 1px;
+  padding-bottom: 1px; 
+}
+

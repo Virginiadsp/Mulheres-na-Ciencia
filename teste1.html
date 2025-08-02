@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste: Qual cientista você seria?</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="CSS/style.css">
+
+  <style>
+    body { font-family: 'Quicksand', sans-serif; }
+    .pergunta { margin-bottom: 20px; }
+    #resultado { font-weight: bold; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  
+    <header>
+        <img id="banner" src="img/logo.jpg" 
+        alt="Banner">
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="biografias.html">Biografias</a>
+            <a href="areas-da-ciencia.html">Áreas da Ciência</a>
+            <a href="cultura-pop.html">Cultura Pop</a>
+            <a href="testes.html">Testes</a>
+            <a href="participe.html">Participe</a>
+        </nav>
+    </header>
+
+    <main>
+
+      <div id="teste">
+
+          <h2>Qual personagem científica da cultura pop você seria?</h2>
+          <p>Descubra com qual personagem da cultura pop você mais se parece quando o<br> assunto é ciência, genialidade e personalidade!</p>
+
+            <form id="quizForm">
+              
+              <div class="pergunta">
+                <p>1. Qual dessas qualidades combina mais com você?</p>
+                    <label><input type="radio" name="q1" value="amy"> Inteligência analítica</label><br/>
+                    <label><input type="radio" name="q1" value="bernadette"> Liderança e ambição</label><br/>
+                    <label><input type="radio" name="q1" value="velma"> Curiosidade e raciocínio lógico</label><br/>
+                    <label><input type="radio" name="q1" value="shuri"> Criatividade tecnológica</label><br/>
+                    <label><input type="radio" name="q1" value="lena"> Ética e responsabilidade</label><br/>
+                    <label><input type="radio" name="q1" value="jujuba"> Empatia e inovação</label><br/>
+                    <label><input type="radio" name="q1" value="doctor"> Coragem e liderança</label>
+              </div>
+
+              <div class="pergunta">
+                <p>2. Qual é seu maior objetivo?</p>
+                    <label><input type="radio" name="q2" value="amy"> Entender o comportamento humano</label><br/>
+                    <label><input type="radio" name="q2" value="bernadette"> Construir uma carreira de sucesso</label><br/>
+                    <label><input type="radio" name="q2" value="velma"> Resolver mistérios e descobrir a verdade</label><br/>
+                    <label><input type="radio" name="q2" value="shuri"> Criar invenções para melhorar o mundo</label><br/>
+                    <label><input type="radio" name="q2" value="lena"> Usar a ciência para o bem comum</label><br/>
+                    <label><input type="radio" name="q2" value="jujuba"> Cuidar da comunidade com inovação</label><br/>
+                    <label><input type="radio" name="q2" value="doctor"> Viajar e proteger o universo</label>
+              </div>
+
+              <div class="pergunta">
+                <p>3. Onde você se vê trabalhando?</p>
+                    <label><input type="radio" name="q3" value="amy"> Universidade ou laboratório</label><br/>
+                    <label><input type="radio" name="q3" value="bernadette"> Indústria ou empresa</label><br/>
+                    <label><input type="radio" name="q3" value="velma"> Em campo, investigando</label><br/>
+                    <label><input type="radio" name="q3" value="shuri"> Centro tecnológico avançado</label><br/>
+                    <label><input type="radio" name="q3" value="lena"> Laboratório e empresa social</label><br/>
+                    <label><input type="radio" name="q3" value="jujuba"> Liderando um reino ou comunidade</label><br/>
+                    <label><input type="radio" name="q3" value="doctor"> Em missões pelo espaço e tempo</label>
+              </div>
+
+              <div class="pergunta">
+                <p>4. Qual dessas frases mais combina com você?</p>
+                    <label><input type="radio" name="q4" value="amy"> "Conhecimento é poder."</label><br/>
+                    <label><input type="radio" name="q4" value="bernadette"> "Ambição é o caminho para o sucesso."</label><br/>
+                    <label><input type="radio" name="q4" value="velma"> "A lógica sempre vence."</label><br/>
+                    <label><input type="radio" name="q4" value="shuri"> "Inovar é transformar."</label><br/>
+                    <label><input type="radio" name="q4" value="lena"> "Com responsabilidade, fazemos a diferença."</label><br/>
+                    <label><input type="radio" name="q4" value="jujuba"> "Cuidar é criar um futuro melhor."</label><br/>
+                    <label><input type="radio" name="q4" value="doctor"> "Coragem para mudar o impossível."</label>
+              </div>
+
+              <div class="pergunta">
+                <p>5. Qual é seu hobby favorito?</p>
+                    <label><input type="radio" name="q5" value="amy"> Ler livros científicos e estudar</label><br/>
+                    <label><input type="radio" name="q5" value="bernadette"> Trabalhar em projetos e liderar equipes</label><br/>
+                    <label><input type="radio" name="q5" value="velma"> Resolver enigmas e quebra-cabeças</label><br/>
+                    <label><input type="radio" name="q5" value="shuri"> Inventar gadgets e experimentar tecnologia</label><br/>
+                    <label><input type="radio" name="q5" value="lena"> Debater ética e ciência</label><br/>
+                    <label><input type="radio" name="q5" value="jujuba"> Criar receitas e cuidar do jardim</label><br/>
+                    <label><input type="radio" name="q5" value="doctor"> Explorar novos mundos e histórias</label>
+              </div>
+
+              <div class="pergunta">
+                <p>6. Se pudesse escolher um superpoder, qual seria?</p>
+                    <label><input type="radio" name="q6" value="amy"> Super inteligência</label><br/>
+                    <label><input type="radio" name="q6" value="bernadette"> Força e liderança</label><br/>
+                    <label><input type="radio" name="q6" value="velma"> Poder de dedução</label><br/>
+                    <label><input type="radio" name="q6" value="shuri"> Controle da tecnologia</label><br/>
+                    <label><input type="radio" name="q6" value="lena"> Capacidade de curar</label><br/>
+                    <label><input type="radio" name="q6" value="jujuba"> Poder de criar vida</label><br/>
+                    <label><input type="radio" name="q6" value="doctor"> Viagem no tempo</label>
+              </div>
+
+              <button type="button" onclick="calcularResultado()">Ver resultado</button>
+
+            </form>
+            
+            <div id="resultado"></div>
+
+            <script>
+            function calcularResultado() {
+              const perguntas = ["q1","q2","q3","q4","q5","q6"];
+              const contagem = {
+                amy:0,
+                bernadette:0,
+                velma:0,
+                shuri:0,
+                lena:0,
+                jujuba:0,
+                doctor:0
+              };
+
+              for(let p of perguntas){
+                const resposta = document.querySelector(`input[name="${p}"]:checked`);
+                if(resposta){
+                  contagem[resposta.value]++;
+                } else {
+                  alert("Por favor, responda todas as perguntas.");
+                  return;
+                }
+              }
+
+              const maior = Object.entries(contagem).reduce((a,b)=> a[1]>=b[1]? a:b)[0];
+
+              const descricoes = {
+                amy: "Você é como a Amy Farrah Fowler: analítica, inteligente e apaixonada pelo conhecimento.",
+                bernadette: "Você é como a Bernadette Rostenkowski: ambiciosa, líder nata e determinada.",
+                velma: "Você é como a Velma Dinkley: lógica, curiosa e sempre resolvendo mistérios.",
+                shuri: "Você é como a Shuri: criativa, inovadora e genial com tecnologia.",
+                lena: "Você é como a Lena Luthor: ética, responsável e comprometida com o bem.",
+                jujuba: "Você é como a Princesa Jujuba: empática, inovadora e dedicada a cuidar dos outros.",
+                doctor: "Você é como a 13ª Doutora: corajosa, líder e sempre pronta para aventuras incríveis."
+              };
+
+              document.getElementById("resultado").textContent = descricoes[maior];
+            }
+            </script>
+
+        </div>
+
+    </main>
+    
+    <footer>
+      <p>© 2025 Mulheres na Ciência. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

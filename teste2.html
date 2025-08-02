@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste: Qual área da ciência combina mais com você?</title>
+
+   <link rel="stylesheet" href="CSS/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Quicksand', sans-serif; }
+    .pergunta { margin-bottom: 20px; }
+    #resultado { font-weight: bold; margin-top: 20px; }
+  </style>
+</head>
+<body>
+    
+    <header>
+        <img id="banner" src="img/logo.jpg" 
+        alt="Banner">
+
+        <nav>
+        <a href="index.html">Home</a>
+        <a href="biografias.html">Biografias</a>
+        <a href="areas-da-ciencia.html">Áreas da Ciência</a>
+        <a href="cultura-pop.html">Cultura Pop</a>
+        <a href="testes.html">Testes</a>
+        <a href="participe.html">Participe</a>
+        </nav>
+    </header>
+
+  <main>
+
+    <div id="teste">
+
+      <h2>Qual área da ciência combina mais com você?</h2>
+      <p>Responda às perguntas e descubra qual campo da ciência tem mais a ver com<br> o seu jeito de pensar e explorar o mundo!</p>
+
+      <form id="quizForm">
+
+        <div class="pergunta">
+          <p>1. Qual dessas palavras te atrai mais?</p>
+              <label><input type="radio" name="q1" value="astronomia"> Universo</label><br/>
+              <label><input type="radio" name="q1" value="engenharia"> Construção</label><br/>
+              <label><input type="radio" name="q1" value="biologia"> Vida</label><br/>
+              <label><input type="radio" name="q1" value="matematica"> Lógica</label><br/>
+              <label><input type="radio" name="q1" value="computacao"> Tecnologia</label><br/>
+              <label><input type="radio" name="q1" value="fisica"> Energia</label>
+        </div>
+
+        <div class="pergunta">
+          <p>2. Qual ambiente você prefere para trabalhar?</p>
+            <label><input type="radio" name="q2" value="astronomia"> Observatórios ou planetários</label><br/>
+            <label><input type="radio" name="q2" value="engenharia"> Construções, fábricas ou projetos</label><br/>
+            <label><input type="radio" name="q2" value="biologia"> Florestas, laboratórios ou hospitais</label><br/>
+            <label><input type="radio" name="q2" value="matematica"> Quadros, livros e números</label><br/>
+            <label><input type="radio" name="q2" value="computacao"> Computadores e softwares</label><br/>
+            <label><input type="radio" name="q2" value="fisica"> Aceleradores de partículas ou salas de pesquisa</label>
+        </div>
+
+        <div class="pergunta">
+          <p>3. Que tipo de problema você gosta de resolver?</p>
+            <label><input type="radio" name="q3" value="astronomia"> Mistérios do universo</label><br/>
+            <label><input type="radio" name="q3" value="engenharia"> Problemas práticos do dia a dia</label><br/>
+            <label><input type="radio" name="q3" value="biologia"> Doenças, ecossistemas e o corpo humano</label><br/>
+            <label><input type="radio" name="q3" value="matematica"> Equações e padrões</label><br/>
+            <label><input type="radio" name="q3" value="computacao"> Automatização e criação de sistemas</label><br/>
+            <label><input type="radio" name="q3" value="fisica"> Como as coisas funcionam no universo</label>
+        </div>
+
+        <div class="pergunta">
+          <p>4. Qual dessas habilidades você se identifica mais?</p>
+            <label><input type="radio" name="q4" value="astronomia"> Observação e paciência</label><br/>
+            <label><input type="radio" name="q4" value="engenharia"> Invenção e construção</label><br/>
+            <label><input type="radio" name="q4" value="biologia"> Análise e cuidado</label><br/>
+            <label><input type="radio" name="q4" value="matematica"> Raciocínio lógico</label><br/>
+            <label><input type="radio" name="q4" value="computacao"> Programação e inovação</label><br/>
+            <label><input type="radio" name="q4" value="fisica"> Experimentação e teoria</label>
+        </div>
+
+        <div class="pergunta">
+          <p>5. Que tipo de documentário te interessa mais?</p>
+            <label><input type="radio" name="q5" value="astronomia"> Universo, buracos negros e planetas</label><br/>
+            <label><input type="radio" name="q5" value="engenharia"> Grandes construções e inovações</label><br/>
+            <label><input type="radio" name="q5" value="biologia"> Vida selvagem e corpo humano</label><br/>
+            <label><input type="radio" name="q5" value="matematica"> Teoremas e enigmas matemáticos</label><br/>
+            <label><input type="radio" name="q5" value="computacao"> IA, hackers e tecnologia</label><br/>
+            <label><input type="radio" name="q5" value="fisica"> Física quântica e energia</label>
+        </div>
+
+        <div class="pergunta">
+          <p>6. Se você pudesse fazer uma grande descoberta, qual seria?</p>
+            <label><input type="radio" name="q6" value="astronomia"> Vida fora da Terra</label><br/>
+            <label><input type="radio" name="q6" value="engenharia"> Uma tecnologia revolucionária</label><br/>
+            <label><input type="radio" name="q6" value="biologia"> Cura de uma doença grave</label><br/>
+            <label><input type="radio" name="q6" value="matematica"> Um novo teorema famoso</label><br/>
+            <label><input type="radio" name="q6" value="computacao"> Uma IA que ajuda a humanidade</label><br/>
+            <label><input type="radio" name="q6" value="fisica"> Uma nova lei da natureza</label>
+        </div>
+
+        <button type="button" onclick="calcularResultado()">Ver resultado</button>
+
+      </form>
+      
+
+      <div id="resultado"></div>
+
+      <script>
+        function calcularResultado() {
+          const perguntas = ["q1", "q2", "q3", "q4", "q5", "q6"];
+          const contagem = {
+            astronomia: 0,
+            engenharia: 0,
+            biologia: 0,
+            matematica: 0,
+            computacao: 0,
+            fisica: 0
+          };
+
+          for (let p of perguntas) {
+            const resposta = document.querySelector(`input[name="${p}"]:checked`);
+            if (resposta) {
+              contagem[resposta.value]++;
+            } else {
+              alert("Por favor, responda todas as perguntas.");
+              return;
+            }
+          }
+
+          const maior = Object.entries(contagem).reduce((a, b) => a[1] >= b[1] ? a : b)[0];
+
+          const descricoes = {
+            astronomia: "A Astronomia é sua área ideal! Você tem uma mente exploradora e curiosa sobre o cosmos.",
+            engenharia: "Engenharia combina com você! Você é prática, criativa e adora solucionar problemas.",
+            biologia: "Biologia é seu campo natural! Você se interessa pela vida em todas as formas.",
+            matematica: "Matemática é sua paixão! Você tem raciocínio lógico e adora padrões.",
+            computacao: "Ciência da Computação é sua área! Você gosta de tecnologia, inovação e resolver problemas com códigos.",
+            fisica: "Física é o seu caminho! Você quer entender como o universo funciona."
+          };
+
+          document.getElementById("resultado").textContent = descricoes[maior];
+        }
+      </script>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Mulheres na Ciência. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

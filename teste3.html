@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Teste: Qual inventora ou cientista histórica você mais parece?</title>
+
+     <link rel="stylesheet" href="CSS/style.css">
+
+     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Quicksand', sans-serif; }
+    .pergunta { margin-bottom: 20px; }
+    #resultado { font-weight: bold; margin-top: 20px; }
+  </style>
+</head>
+<body>
+    
+    <header>
+        <img id="banner" src="img/logo.jpg" 
+        alt="Banner">
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="biografias.html">Biografias</a>
+            <a href="areas-da-ciencia.html">Áreas da Ciência</a>
+            <a href="cultura-pop.html">Cultura Pop</a>
+            <a href="testes.html">Testes</a>
+            <a href="participe.html">Participe</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="teste">
+
+            <h2>Qual inventora ou cientista histórica você mais parece?</h2>
+            <p>Descubra com qual mente brilhante da história você mais se identifica.</p>
+
+            <form id="quizForm">
+
+                <div class="pergunta">
+                    <p><b>1. Qual dessas qualidades você mais valoriza?</b></p>
+                        <label><input type="radio" name="q1" value="marie"> Dedicação e paixão pela ciência experimental</label><br/>
+                        <label><input type="radio" name="q1" value="ada"> Visão inovadora e amor por tecnologia</label><br/>
+                        <label><input type="radio" name="q1" value="rosalind"> Curiosidade e atenção aos detalhes minuciosos</label><br/>
+                        <label><input type="radio" name="q1" value="katherine"> Lógica e habilidade com números para resolver problemas reais</label><br/>
+                        <label><input type="radio" name="q1" value="hedy"> Criatividade combinada com talento artístico</label><br/>
+                        <label><input type="radio" name="q1" value="valentina"> Coragem e pioneirismo em novas fronteiras</label>
+                </div>
+
+                <div class="pergunta">
+                    <p><b>2. Qual ambiente de trabalho mais te atrai?</b></p>
+                        <label><input type="radio" name="q2" value="marie"> Laboratório de pesquisa</label><br/>
+                        <label><input type="radio" name="q2" value="ada"> Computadores e programação</label><br/>
+                        <label><input type="radio" name="q2" value="rosalind"> Estação de microscopia e análise de dados</label><br/>
+                        <label><input type="radio" name="q2" value="katherine"> Escritório com números e cálculos</label><br/>
+                        <label><input type="radio" name="q2" value="hedy"> Estúdio criativo e laboratório tecnológico</label><br/>
+                        <label><input type="radio" name="q2" value="valentina"> Espaço, no comando de uma missão</label>
+                </div>
+
+                <div class="pergunta">
+                    <p>3. Qual destas frases mais combina com você?</p>
+                        <label><input type="radio" name="q3" value="marie"> "A pesquisa é a base do progresso."</label><br/>
+                        <label><input type="radio" name="q3" value="ada"> "Imaginar o futuro é o primeiro passo para criá-lo."</label><br/>
+                        <label><input type="radio" name="q3" value="rosalind"> "O diabo está nos detalhes."</label><br/>
+                        <label><input type="radio" name="q3" value="katherine"> "Números contam histórias que podem salvar vidas."</label><br/>
+                        <label><input type="radio" name="q3" value="hedy"> "A arte pode inspirar a ciência."</label><br/>
+                        <label><input type="radio" name="q3" value="valentina"> "Explorar o desconhecido é o maior desafio."</label>
+                </div>
+
+                <div class="pergunta">
+                    <p>4. Se pudesse escolher um projeto, qual seria?</p>
+                        <label><input type="radio" name="q4" value="marie"> Descobrir novos elementos químicos</label><br/>
+                        <label><input type="radio" name="q4" value="ada"> Desenvolver um algoritmo revolucionário</label><br/>
+                        <label><input type="radio" name="q4" value="rosalind"> Mapear estruturas invisíveis à olho nu</label><br/>
+                        <label><input type="radio" name="q4" value="katherine"> Calcular trajetórias para salvar vidas humanas</label><br/>
+                        <label><input type="radio" name="q4" value="hedy"> Inventar uma tecnologia que conecte o mundo</label><br/>
+                        <label><input type="radio" name="q4" value="valentina"> Ser a primeira em uma nova fronteira humana</label>
+                </div>
+
+                <div class="pergunta">
+                    <p>5. Como você lida com desafios?</p>
+                        <label><input type="radio" name="q5" value="marie"> Com perseverança e estudo constante</label><br/>
+                        <label><input type="radio" name="q5" value="ada"> Com criatividade e pensamento fora da caixa</label><br/>
+                        <label><input type="radio" name="q5" value="rosalind"> Com análise cuidadosa e paciência</label><br/>
+                        <label><input type="radio" name="q5" value="katherine"> Com lógica aplicada e precisão</label><br/>
+                        <label><input type="radio" name="q5" value="hedy"> Com inovação e adaptabilidade</label><br/>
+                        <label><input type="radio" name="q5" value="valentina"> Com coragem e espírito pioneiro</label>
+                </div>
+
+                <div class="pergunta">
+                    <p> Qual dessas áreas você escolheria para se especializar?</p>
+                        <label><input type="radio" name="q6" value="marie"> Química e física</label><br/>
+                        <label><input type="radio" name="q6" value="ada"> Computação e matemática</label><br/>
+                        <label><input type="radio" name="q6" value="rosalind"> Biologia molecular</label><br/>
+                        <label><input type="radio" name="q6" value="katherine"> Matemática aplicada e ciências exatas</label><br/>
+                        <label><input type="radio" name="q6" value="hedy"> Engenharia e telecomunicações</label><br/>
+                        <label><input type="radio" name="q6" value="valentina"> Ciências aeroespaciais</label>
+                </div>
+
+                <button type="button" onclick="calcularResultado()">Ver resultado</button>
+
+            </form>
+
+            <div id="resultado"></div>
+
+            <script>
+                function calcularResultado() {
+                const perguntas = ["q1","q2","q3","q4","q5","q6"];
+                const contagem = {
+                    marie: 0,
+                    ada: 0,
+                    rosalind: 0,
+                    katherine: 0,
+                    hedy: 0,
+                    valentina: 0
+                };
+
+                for(let p of perguntas) {
+                    const resposta = document.querySelector(`input[name="${p}"]:checked`);
+                    if (!resposta) {
+                    alert("Por favor, responda todas as perguntas.");
+                    return;
+                    }
+                    contagem[resposta.value]++;
+                }
+
+                const maior = Object.entries(contagem).reduce((a,b) => a[1] >= b[1] ? a : b)[0];
+
+                const descricoes = {
+                    marie: "Você se parece com Marie Curie: dedicada, pioneira na pesquisa científica e apaixonada pelo conhecimento.",
+                    ada: "Você se parece com Ada Lovelace: visionária da computação e apaixonada por tecnologia inovadora.",
+                    rosalind: "Você se parece com Rosalind Franklin: detalhista, curiosa e fundamental para descobertas importantes na biologia.",
+                    katherine: "Você se parece com Katherine Johnson: matemática brilhante que usou números para levar a humanidade ao espaço.",
+                    hedy: "Você se parece com Hedy Lamarr: criativa, inventora e uma mente que uniu ciência e arte.",
+                    valentina: "Você se parece com Valentina Tereshkova: corajosa pioneira, a primeira mulher no espaço e símbolo de inovação."
+                };
+
+                document.getElementById("resultado").textContent = descricoes[maior];
+                }
+            </script>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2025 Mulheres na Ciência. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
