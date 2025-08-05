@@ -24,10 +24,6 @@ h1, h2, p {
   text-align: center;
 }
 
-h1 {
-  margin-bottom: 0;
-}
-
 h3 {
   margin-right: 20%;
 }
@@ -36,28 +32,20 @@ h3 {
 
 header {
   color: white;
-  background-color: #5bbca9;
-  margin: 0;
-}
-
-#banner {
-  width: 100%;
+  
 }
 
 nav {
-  padding-top: 10px;
-  padding-bottom: 15px;
-  margin-top: 1px;
+  margin-top: -4px;;
 }
 
 nav, a {
   text-align: center;
-  background-color: #5bbca9;
-  padding: 5px;
-  padding-top: 10px;
-  padding-bottom: 16px;
+  background-color: rgb(211, 187, 202);
   color: rgb(255, 255, 255); 
-  border-radius: 5px;;
+  border-radius: 5px;
+  padding: 15px;
+  padding-top: 17px;
 }
 
 a:link {
@@ -66,7 +54,7 @@ a:link {
 
 header a:link, header a:visited {
   padding: 8px 12px;
-  background-color: rgb(0, 118, 192); 
+  background-color: rgb(106, 140, 224); 
 }
 
 header a:hover { 
@@ -76,6 +64,11 @@ header a:hover {
 
 img {
   width: 700px;
+}
+
+#banner {
+  width: 1560px;
+  margin: 0;
 }
 
 /*Testes e formulários*/
@@ -121,27 +114,25 @@ figcaption {
 article {
   border: 1px solid rgb(192, 192, 192);
   background-color: #f9f9f9; 
-  padding: 15px 20px;
+  padding: 20px 20px; /*Espeçamento da caixa/geral*/
   margin-bottom: 20px;   
   border-radius: 6px;
   box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
   max-width: 700px;  
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 /* Cabeçalhos dentro do artigo */
 article h2 {
-  margin-top: 0;
-  color: #090909;
+  margin-top: 0px;
+  color: #2f2e2e;
 }
 
 /* Parágrafos com boa leitura */
 article p {
   line-height: 1.5;
   color: #444;
-  text-align: justify;
 }
 
 article figure img {
@@ -161,6 +152,7 @@ article figure img {
 
 /*Index*/
 
+
 .container-sobre {
   max-width: 900px;
   margin: 0 auto;
@@ -176,7 +168,7 @@ article figure img {
 
 footer {
   text-align: center;
-  background-color: #5bbca9;
+  background-color: rgb(211, 187, 202);
   color: white;
   padding-top: 1px;
   padding-bottom: 1px; 
