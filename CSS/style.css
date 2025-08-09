@@ -176,3 +176,22 @@ footer {
  
 }
 
+ #formi {
+  box-sizing: border-box;
+  padding-top: 3px;
+  background-color: rgb(203, 197, 215);
+  width: 510px;
+  height: 510px;
+  position: relative;
+  left: 15em;
+  border-radius: 10px;        
+}
+
+label {
+  height: 10px;
+}
+
+label[for="datanascimento"] {
+  margin-top: 10px;
+}
+

@@ -9,34 +9,6 @@
 
      <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
-      <style>
-
-        #formi {
-            box-sizing: border-box;
-            padding-top: 3px;
-            background-color: rgb(203, 197, 215);
-            width: 510px;
-            height: 510px;
-            position: relative;
-            left: 15em;
-            border-radius: 10px;        
-            }
-
-            label {
-                height: 10px;
-            }
-
-            label[for="datanascimento"] {
-                margin-top: 10px;
-            }
-
-        
-
-            
-
-     </style>
-
-
 </head>
 <body>
 
@@ -59,46 +31,44 @@
 
         <div id="formi">
 
-        <h1>Participe</h1>
-        <p id="destaque">Sua voz importa.<br> Participe compartilhando ideias e experiências.</p>
+            <h1>Participe</h1>
+            <p id="destaque">Sua voz importa.<br> Participe compartilhando ideias e experiências.</p>
 
-        <form id="form-pesquisa" action="https://formsubmit.co/virginiapereira2812@gmail.com" method="POST">
-
-
-            <label for="nome" id="nome">Nome:</label>
-            <input type="text" name="nome" id="nome">
-
-            <label for="email" id="nome">E-mail:</label>
-            <input type="text" name="email" id="email">
-
-            Gênero:
-            <br>
-            <select name="genero">
-                <option value="" selected>Selecione</option>
-                <option value="mulher cis">Mulher cis</option>
-                <option value="mulher trans">Mulher trans</option>
-                <option value="homem cis">Homem cis</option>
-                <option value="homem tras">Homem trans</option>
-                <option value="não binare">Não-bináne</option>
-                <option value="outro">Outro</option>
-            </select>
-            
-
-            <label for="datanascimento">Data de nascimento:</label>
-            <input type="date" name="dataNascimento" id="datanascimento">
+            <form id="form-pesquisa" action="https://formsubmit.co/virginiapereira2812@gmail.com" method="POST">
 
 
-            <label for="comentario">Comentário:</label>
-            <textarea id="comentario" name="comentario" placeholder="Digite seu comentário" rows="5" cols="40"></textarea>
+                <label for="nome" id="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
 
-            <input type="submit" value="Enviar">
+                <label for="email" id="nome">E-mail:</label>
+                <input type="text" name="email" id="email">
 
-        </form>
+                Gênero:
+                <br>
+                <select name="genero">
+                    <option value="" selected>Selecione</option>
+                    <option value="mulher cis">Mulher cis</option>
+                    <option value="mulher trans">Mulher trans</option>
+                    <option value="homem cis">Homem cis</option>
+                    <option value="homem tras">Homem trans</option>
+                    <option value="não binare">Não-bináne</option>
+                    <option value="outro">Outro</option>
+                </select>
+                
+
+                <label for="datanascimento">Data de nascimento:</label>
+                <input type="date" name="dataNascimento" id="datanascimento">
+
+
+                <label for="comentario">Comentário:</label>
+                <textarea id="comentario" name="comentario" placeholder="Digite seu comentário" rows="5" cols="40"></textarea>
+
+                <input type="submit" value="Enviar">
+
+            </form>
 
         </div>
         
-    
-
     </main>
 
     <footer>
