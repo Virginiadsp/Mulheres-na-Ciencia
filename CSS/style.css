@@ -10,6 +10,7 @@ body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
   background-color: rgb(247, 236, 236);
+  overflow-x: hidden;
 }
 
 main {
@@ -32,11 +33,10 @@ h3 {
 
 header {
   color: white;
-  
 }
 
 nav {
-  margin-top: -4px;;
+  margin-top: -4px;
 }
 
 nav, a {
@@ -67,7 +67,7 @@ img {
 }
 
 #banner {
-  width: 1560px;
+  width: 1550px;
   margin: 0;
 }
 
@@ -99,7 +99,7 @@ figcaption {
 #teste a {
   display: block;
   margin-bottom: 10px;
-  background-color: rgb(175, 113, 233);
+  background-color: rgb(175, 164, 196);
   padding: 5px;
 }
 
@@ -167,10 +167,12 @@ article figure img {
 /*Footer*/
 
 footer {
-  text-align: center;
   background-color: rgb(211, 187, 202);
   color: white;
   padding-top: 1px;
-  padding-bottom: 1px; 
+  padding-bottom: 1px;
+  text-align: center;
+  padding-left: 70px;
+ 
 }
 
