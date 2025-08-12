@@ -64,6 +64,8 @@ header a:hover {
 
 img {
   width: 700px;
+  max-width: 100%;
+  height: auto;
 }
 
 #banner {
@@ -195,3 +197,90 @@ label[for="datanascimento"] {
   margin-top: 10px;
 }
 
+/* ======== RESPONSIVIDADE PARA CELULAR ======== */
+@media (max-width: 768px) {
+
+  /* Conteúdo principal ocupa toda a tela */
+  main {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Imagens e banner proporcionais */
+  img, #banner {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #banner {
+    height: 180px;
+  }
+
+  /* Menu em linha, centralizado e compacto */
+  nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: px;
+    font-size: 0.68rem;
+    
+  }
+
+  a {
+    padding: 20px;
+    margin-left: 4px;
+    padding-top: 100px;
+  }
+
+  /* Caixa do formulário adaptada */
+  #formi {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    left: 0;
+    padding: 15px;
+    position: static;
+  }
+
+  /* Texto centralizado e fonte um pouco menor */
+  h1, h2, p {
+  
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .sobre-projeto {
+    
+    box-sizing: border-box;
+    text-align: center;
+    width: 500px;
+    height: 470px;
+    position: relative;
+    left: 20px;
+    
+    font-size: 17px;
+  }
+
+  footer {
+    box-sizing: border-box;
+    position: relative;
+    top:px
+  }
+
+  #formi {
+    position: relative;
+    top: 35px;
+  }
+
+  body {
+    font-size: 0.95rem;
+  }
+}
