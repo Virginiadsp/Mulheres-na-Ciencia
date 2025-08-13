@@ -198,13 +198,10 @@ label[for="datanascimento"] {
 }
 
 /* ======== RESPONSIVIDADE PARA CELULAR ======== */
-@media (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 1000px) {
 
   /* Conteúdo principal ocupa toda a tela */
-  main {
-    width: 100%;
-    padding: 10px;
-  }
+
 
   /* Imagens e banner proporcionais */
   img, #banner {
@@ -245,7 +242,6 @@ label[for="datanascimento"] {
 
   /* Texto centralizado e fonte um pouco menor */
   h1, h2, p {
-  
     text-align: center;
   }
 
@@ -281,6 +277,7 @@ label[for="datanascimento"] {
   }
 
   body {
+    min-width: 320px;
     font-size: 0.95rem;
   }
 }
